@@ -1,0 +1,74 @@
+﻿{
+	"table":  [
+		{
+			"situation":"METABOLIC EMERGENCIES",
+			"conditions":[
+			      { "condition":"Anaphylaxis",
+				"drugs":[
+					{
+					"name":"Diphenhydramine[Benadryl]",
+					"usage":["PO/IV/IO/IM: 1 mg/kg (max 50 mg)"]
+			      		},
+			      		{ 
+					"name":""Epinephrine",
+					"usage":["IM/SubQ: 1:1,000 -- 0.01mg/kg (0.01mL/kg, max 0.5ml)",
+						  "Not responsive may give 1:10,000 -- 0.1mg/kg (0.1mL/kg)",
+						   "IV/IO over 2 minutes (max 1mg)"]
+	     				},
+					{
+					"name":"Methylprednisolone",
+					"usage":["JPO/IV: 1mg/kg (max 60mg)"]
+					}]
+				},
+			       {"condition":"Adrenal Crisis",
+				"drugs":[
+					{
+					"name"="Fludrocortisone [Florinef]",
+					"usage":["PO: 0.05-0.1mg q 24hrs"]
+					},
+					{
+					"name"="Hydrocortisone [Solucortef]",
+					"usage"=["IV/IO/IM: 1-2 mg/kg initial bolus diluted to 50 mg/mL, over 3-5 minutes",
+						 "Followed by intermittent doses diluted to 1 mg/mL, over 20-30 minutes",
+						"Infants/young children: 10-30 mg q6hrs",
+						"Older children: 40-60 mg q6hrs"]
+					}]
+				}
+		},
+		{
+			"situation":"HYPERTENSION",
+			"conditions":[
+			      { "condition":" ",
+				"drugs":[
+					{
+					"name":"Hydralazine",
+					"usage":["PIV/IM 0.1-0.2 mg/kg over 1-2 minutes q4hrs prn (max 20 mg)"
+						"Good choice during prenancy"]
+			      		},
+			      		{ 
+					"name":"Labetalol",
+					"usage":["IV bolus: 0.2-1 mg/kg (max 40 mg) slow push over 2-3 minutes)",
+						  "Continuous IV infusion: 0.25-3 mg/kg/hr titrated to desired effect",
+						   "Do not use in asthma patient"]
+	     				},
+					{
+					"name":"Nicardipine",
+					"usage":["JPO/IV: 1mg/kg (max 60mg)",
+						"Continuous IV infusion: 0.5-3 mcg/kg/min titrated to desired effect",
+						"Do not use with increased ICP"]
+					},
+					{
+					"name":"Nifedipine",
+					"usage":["PO/sublingual capsule: noite amd swallow",
+						"0.25-0.5 mg/kg (max 10mg) q4hrs prn (max 1-2 mg/kg/day)"]
+					}]
+					{
+					"name":"Sodium Nitroprusside[Nipride]",
+					"usage":["Continuous IV/IO infusion intiate at 0.3-0.5 mcg/kg/min and titrate (max 8-10 mcg/kg/min)",
+						"NOTE: if desired effects not achieved after 10 minutes at 10 mcg/kg/min then discontinue!"]
+					}]
+				}]
+		}
+				
+	
+]}

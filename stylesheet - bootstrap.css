@@ -1,0 +1,324 @@
+
+.img-responsive{
+opacity:0.10;
+filter:alpha(opacity=10);
+position:fixed;
+top:10%;
+right: 0;
+margin-left:35%;
+margin-top:auto;
+z-index:-1;
+}
+
+
+
+.navbar-collapse{
+	padding-left:0px !important;
+	padding-right:0px !important;	
+		
+}
+
+
+
+.col-sm-4{
+	padding-left: 0px !important; 
+	padding-right: 0px !important;
+	overflow:none !important;
+
+}
+
+
+
+
+.collapse > .list-group-item{
+	color:#F3F6FA !important;
+	background-color:#628CB3;
+	border: none !important;
+	border-radius: 0px !important;
+	padding-left: 12px  !important;
+	-webkit-transition: all .2s ease-in-out;
+  	-moz-transition: all .2s ease-in-out;
+  	-o-transition:all .2s ease-in-out;
+  	transition:all .2s ease-in-out;
+}
+
+.collapsing>.list-group-item {
+	color:#F3F6FA !important;
+	background-color:#628CB3;
+	border: none !important;
+	border-radius: 0px !important;
+
+	padding-left: 12px  !important;
+}
+
+.collapse > .list-group-item:hover{
+	background-color: #88A6C2 !important;
+	//background-color: #38568C !important;
+	border-left: 5px solid #2E9AFE !important;
+	padding-left: 18px !important;;
+}
+
+.single:hover{
+	//border-left: 5px solid #2E9AFE !important;
+	padding-left: 15px !important;
+	-webkit-transition: all .2s ease-in-out;
+  	-moz-transition: all .2s ease-in-out;
+  	-o-transition:all .2s ease-in-out;
+  	transition:all .25s ease-in-out;
+}
+
+
+
+a.active{
+	background: #385269 !important;
+}
+
+a.active{
+	background: #385269 !important;
+}
+
+
+.panel{
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+	border:none !important;
+	background-color:#38648D;
+	margin-bottom: 0px;
+}
+
+.list-group{
+	margin-bottom: 0px;
+}
+
+.accordion{
+	//background:linear-gradient(#1D5075,#193566);
+	background-color:#38648D;
+	color:#F3F6FA !important;
+	border: 0px !important;
+	padding-left:7px;
+}
+
+.single.active{
+	background-color:#38648D;
+}
+
+.list-group-item:hover{
+	//text-shadow: 0.5px 0.5px 0.5px rgba(255,255,255,1) !important;
+	//background-color: #23527C !important;
+	background-color: #7E98B1 !important;
+}
+
+.collapse.in {
+	  overflow-y:visible;
+}
+
+
+
+/* active state, i.e. menu open */
+
+
+.navbar-toggle span{
+  //background-color: #166888;
+-webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -o-transition:all .25s ease-in-out;
+  transition:all .25s ease-in-out;
+}
+
+.navbar-toggle.active span:nth-child(2){
+  //margin-top: 4px;
+  transform-origin: 15% 0%;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -moz-transform:rotate(90deg);
+}
+
+.navbar-toggle.active span:nth-child(3){
+  //margin-bottom: 8px;
+  transform-origin: 43% 0%;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -moz-transform:rotate(90deg);
+}
+
+
+.navbar-toggle.active span:nth-child(4){
+  //margin-bottom: 10px;
+  transform-origin: 70%  0%;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -moz-transform:rotate(90deg);
+}
+
+.navbar-toggle.active{
+   padding-right: 6px !important;
+}
+
+
+
+.text-center{
+	padding:15px;
+	font-size: 17px;
+}
+
+.dls{
+	padding-left: 15px;
+	padding-top:15px;
+	padding-bottom:7px;
+	margin-bottom:0px;
+	border-left: 1px solid black;
+	border-right:1px solid black;
+}
+
+
+.title{
+	background-color:#D8E6FF;
+	border: 1px solid black;
+	padding: 7px;
+	padding-left: 3px;
+	position: relative;
+	z-index:-2;
+}
+
+.title a{
+	text-decoration:none;
+}
+
+.situation{
+	border-bottom:1px solid black;
+}
+
+[title~=Hypertension]{
+	display: none;
+}
+
+#HYPERTENSION{
+	text-decoration:none !important;
+}
+
+#HYPERTENSION:hover{
+	color:#a94442;
+}
+
+#HYPERTENSION.active{
+	background:none !important;
+}
+
+#BRADYCARDIA{
+	text-decoration:none !important;
+}
+
+#BRADYCARDIA:hover{
+	color:#a94442;
+}
+
+#BRADYCARDIA.active{
+	background:none !important;
+}
+
+#TACHYCARDIA{
+	text-decoration:none !important;
+}
+ 
+#TACHYCARDIA:hover{
+	color:#a94442;
+}
+
+#TACHYCARDIA.active{
+	background:none !important;
+}
+
+#CARDIAC{
+	text-decoration:none !important;
+}
+ 
+#CARDIAC:hover{
+	color:#a94442;
+}
+
+#CARDIAC.active{
+	background:none !important;
+}
+
+#RESUSCITATION{
+	text-decoration:none !important;
+}
+ 
+#RESUSCITATION:hover{
+	color:#a94442;
+}
+
+#RESUSCITATION.active{
+	background:none !important;
+}
+
+p{
+	margin-bottom: 0px;
+	color:black;
+}
+
+dt{
+	font-weight: normal !important;
+	line-height:1.5em;
+}
+dd{
+	padding-left: 25px;
+	line-height:1.5em;
+}
+
+dl{
+	margin-bottom: 8px;
+}
+
+.navbar-default{
+	//border-color: white;
+	margin-bottom: 0px;
+}
+
+.back-to-top {
+    display:none;
+    position: fixed;
+    bottom: 1em;
+    right: 10px;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(235, 235, 235, 0.80);
+    font-size: 15px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left:15px;
+    padding-right:15px;
+    cursor:pointer;
+    z-index:4;
+}
+
+.back-to-top:hover {    
+    background-color: rgba(135, 135, 135, 0.50);
+}
+
+#firstCanvas, #secondCanvas, #thirdCanvas, #fourthCanvas{
+	max-width:100%;     
+    	min-width:100%;
+	z-index:-3;
+}
+
+
+
+
+@media (min-width: 768px){
+.panel{
+	height: 100%;
+	position:fixed;
+	width: 33.3%;
+	overflow:auto;
+	left: 0;
+	top: 0;
+	bottom:0;
+	border-radius: 0px;
+}
+
+}
+
+        

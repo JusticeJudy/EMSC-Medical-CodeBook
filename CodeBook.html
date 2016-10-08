@@ -1,0 +1,1550 @@
+﻿<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+
+<link type="text/css" rel="stylesheet" href="stylesheet - bootstrap.css">
+
+
+<script>
+	$(document).ready(function(){
+
+	$('.navbar-toggle').click(function(){
+       (this.classList.contains('active') ==true)? this.classList.remove('active') : this.classList.add('active');
+
+});
+	 $('a').click(function(){
+        $('a').removeClass('active');        $(this).addClass('active');
+
+});
+
+    var offset = 220;
+    var duration = 400;
+    
+	jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.back-to-top').fadeIn(duration);
+        } else {
+            jQuery('.back-to-top').fadeOut(duration);
+        }
+});
+    
+    $('.back-to-top').click(function(event) {
+        event.preventDefault();
+        $('html, body').animate({scrollTop: 0}, 500);
+        return false;
+    });
+
+});
+</script>
+</head>
+
+
+
+<body>
+    <div class="container-fluid">
+	    <div class="row">
+		    <div class="col-xs-12 col-sm-4 fix">
+		<nav class="navbar navbar-default" role="navigation">    
+			    <div class="navbar-header">
+			<div id="button">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+			</div>
+			
+		      <a class="navbar-brand hidden-lg hidden-md hidden-sm  href="#">Brand</a>
+			
+		    </div>
+				<div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
+			    <div class="list-group" id="mainmenu">
+				    <div class="panel">
+				   
+					    <a class="list-group-item accordion" data-toggle="collapse" data-parent="#mainmenu" href="#submenu1" aria-expanded="false" href="#">▾ Metabolic Emergencies</a>
+					     <div class="collapse" id="submenu1">
+						    <a class="list-group-item" href="#Anaphylaxis">Anaphylaxis</a>
+							<a class="list-group-item" href="#Adrenal Crisis">Adrenal Crisis</a>
+							<a class="list-group-item" href="#Hypoglycemia">Hypoglycemia</a>
+							<a class="list-group-item" href="#Hyperkalemia">Hyperkalemia</a>
+							<a class="list-group-item" href="#Hypocalcemia">Hypocalcemia</a>
+							<a class="list-group-item" href="#Hyponatremia (For Seizures)">Hyponatremia (For Seizures)</a>
+					     </div>
+					    <a class="list-group-item accordion single" href="#HYPERTENSION">Hypertension</a>
+					    <a class="list-group-item accordion" data-toggle="collapse" data-parent="#mainmenu" href="#submenu2" aria-expanded="false" href="#">▾ Overdose/Poisoning Medications</a>
+					    <div class="collapse" id="submenu2">
+						    <a class="list-group-item" href="#Amphetamine/Methamphetamine Poisoning">Amphetamine/Methamphetamine Poisoning</a>
+							<a class="list-group-item" href="#Benzodiazepine Overdose/Poisoning">Benzodiazepine Overdose/Poisoning</a>
+							<a class="list-group-item" href="#Beta-Blocker Overdose">Beta-Blocker Overdose</a>
+							<a class="list-group-item" href="#Calcium Channel Overdose">Calcium Channel Overdose</a>
+							<a class="list-group-item" href="#Opioid Toxicity with Respiratory Depression">Opioid Toxicity with Respiratory Depression</a>
+							<a class="list-group-item" href="#Organophosphate and Nerve Agent Poisoning">Organophosphate and Nerve Agent Poisoning</a>
+							<a class="list-group-item" href="#Tricyclic Antidepressant or Sodium Channel Blocker">Tricyclic Antidepressant or Sodium Channel Blocker</a>
+					    </div>
+					    <a class="list-group-item accordion" data-toggle="collapse" data-parent="#mainmenu" href="#submenu3" aria-expanded="false" href="#">▾ Rapid Sequence Intubation</a>
+					    <div class="collapse" id="submenu3">
+						       <a class="list-group-item" href="#Pretreatment(if applicable)">Pretreatment(if applicable)</a>
+							<a class="list-group-item" href="#Induction Agents(choose one)">Induction Agents(choose one)</a>
+							<a class="list-group-item" href="#Paralytic Agents(choose one)">Paralytic Agents(choose one)</a>
+							<a class="list-group-item" href="#Maintenance">Maintenance</a>
+					    </div>
+					    <a class="list-group-item accordion single" href="#CARDIO-PULMONARY RESUSCITATION MEDS">Cardio-Pulmonary Resuscitation Meds</a>
+					    <a class="list-group-item accordion" data-toggle="collapse" data-parent="#mainmenu" href="#submenu4" aria-expanded="false" href="#">▾ Respiratory Medications</a>
+					    <div class="collapse" id="submenu4">
+						       <a class="list-group-item" href="#Asthma Exacerbation">Asthma Exacerbation</a>
+							<a class="list-group-item" href="#Upper Airway Obstruction">Upper Airway Obstruction</a>
+					    </div>
+					    <a class="list-group-item accordion" data-toggle="collapse" data-parent="#mainmenu" href="#submenu5" aria-expanded="false" href="#">▾ Neurologic Emergencies</a>
+					    <div class="collapse" id="submenu5">
+					  		<a class="list-group-item" href="#Seizures">Seizures</a>
+					    </div>
+					    <a class="list-group-item accordion single" href="#BRADYCARDIA">Pediatric Bradycardia with Pulse and Poor Perfusion</a>
+					    <a class="list-group-item accordion single" href="#TACHYCARDIA">Pediatric Tachycardia with Pulse and Poor Perfusion</a>
+					    <a class="list-group-item accordion single" href="#CARDIAC">Pediatric Cardiac Arrest</a>
+					    <a class="list-group-item accordion single" href="#RESUSCITATION">Newborn Resuscitation</a>
+					    <a class="list-group-item accordion" data-toggle="collapse" data-parent="#mainmenu" href="#submenu6" aria-expanded="false" href="#">▾ Drips</a>
+					    <div class="collapse" id="submenu6">
+					    		<a class="list-group-item" href="#Vasoactive Medications">Vasoactive Medications</a>
+							<a class="list-group-item" href="#Sedation, Analgesia and Paralysis">Sedation, Analgesia and Paralysis</a>
+					    </div>
+				    </div>
+			    </div>
+				</div>
+			    </nav>
+			</div>
+
+		   
+	        
+		    
+		    <div id="holder" class="col-xs-12 col-sm-8">
+
+<script>
+
+var data= {
+	"table":  [
+		{
+			"situation":"METABOLIC EMERGENCIES",
+			"conditions":[
+			      { "condition":"<a id='Anaphylaxis'>Anaphylaxis</a>",
+              
+				"drugs":[
+					{
+					"name":"Diphenhydramine[Benadryl]",
+					"usage":["PO/IV/IO/IM: 1 mg/kg (max 50 mg)"]
+			      		},
+			      		{ 
+					"name":"Epinephrine",
+					"usage":["IM/SubQ: 1:1,000 -- 0.01mg/kg (0.01mL/kg, max 0.5ml)",
+						  "Not responsive may give 1:10,000 -- 0.1mg/kg (0.1mL/kg)",
+						   "IV/IO over 2 minutes (max 1mg)"]
+	     				},
+					{
+					"name":"Methylprednisolone",
+					"usage":["JPO/IV: 1mg/kg (max 60mg)"]
+					}]
+				},
+			       {"condition":"<a id='Adrenal Crisis'>Adrenal Crisis</a>",
+				"drugs":[
+					{
+					"name":"Fludrocortisone [Florinef]",
+					"usage":["PO: 0.05-0.1mg q 24hrs"]
+					},
+					{
+					"name":"Hydrocortisone [Solucortef]",
+					"usage":["IV/IO/IM: 1-2 mg/kg initial bolus diluted to 50 mg/mL, over 3-5 minutes",
+						 "Followed by intermittent doses diluted to 1 mg/mL, over 20-30 minutes",
+						"Infants/young children: 10-30 mg q6hrs",
+						"Older children: 40-60 mg q6hrs"]
+					}]
+				},
+				{"condition":"<a id='Hypoglycemia'>Hypoglycemia</a>",
+				 "drugs":[
+					 {
+					"name":"Dextrose IV/IO:",
+					"usage":["10%: 5-10 mL/kg ----- age: < 30d days",
+						"25%: 2-4 mL/kg ----- age: 30 days to 2 years",
+						"50%: 1-2 mL/kg (CVL preferred)  ----- age: > 2 years"]				}]
+				},
+				{"condition":"<a id='Hyperglycemia'>Hyperglycemia</a>",
+				"drugs":[
+					{
+					"name":"Insulin Regular [HumulinR]",
+					"usage":["< 6 years: 0.05 units/kg/hr IV continuous infusion for DKA",
+						"≥ 6 years: 0.1 units/kg/hr IV continuous infusion for DKA"]
+					}]
+				},
+				{"condition":"<a id='Hyperkalemia'>Hyperkalemia</a>",
+				"drugs":[
+					{
+					"name":"Albuterol",
+					"usage":["Nebulized: 2.5-5 mg"]
+					},
+					{
+					"name":"Calcium Gluconate 10%",
+					"usage":["IV/IO: 60-100 mg/kg (max 3g) over 3-5 minutes"]
+					},
+					{
+					"name":"Dextrose 25%/Insulin Regular",
+					"usage":["IV/IO: 1g/kg dextrose (4 mL/kg of 25% solution) and insulin 0.2",
+						"units/g of dextrose"]
+					},
+					{
+					"name":"Furosemide",
+					"usage":["IV/IM: 1-2 mg/kg (max 40mg)"]
+					},
+					{
+					"name":"Kayexalate",
+					"usage":["PO: 1g/kg (max 15g) q6hrs as needed",
+						"PR: 1g/kg (max 50g) q2-6hrs as needed"]
+					},
+					{
+					"name":"Sodium Bicarbonate",
+					"usage":["IV/IO: 1 mEg/kg(<2 yrs: 4.2% OR >2 yrs: 8.4%) over 5-15 minutes",
+						"Rapid push may produce hypernatremia, decreased  CSF pressure and possible intracranial hemorrhage"]
+					}]
+				},
+				{"condition":"<a id='Hypocalcemia'>Hypocalcemia</a>",
+				"drugs":[
+					{
+					"name":"Calcium Chloride 10%",
+					"usage":["IV/IO: (CVL preferred) 20 mg/kg(max 2g) over 10 minutes while on cardiac Monitor",
+						"Administer through a seperate line/not with other medications",
+						"Consider calcium gluconate if central line not available"]
+					},
+					{
+					"name":"Calcium Gluconate 10%",
+					"usage":["IV/IO: 60-100 mg/kg (max 3g) over 3-5 minutes"]
+					}]
+				},
+				{"condition":"<a id='Hyponatremia (For Seizures)'>Hyponatremia (For Seizures)</a>",
+				"drugs":[
+					{
+					"name":"Hypertonic Sodium Chloride 3%",
+					"usage":["IV: (CVL preferred) 3 mL/kg bolus over 15 minutes",
+						"Sodium deficite = [(desired Na-actual Na) * 0.6) * weight in kg",
+						"Correction should not exceed 0.5 mEq/Lhr or 12 mEq/L24hrs"]
+					}]
+				}]
+				
+		},
+		{
+			"situation":"<a id=\"HYPERTENSION\" class=\"text-danger\">HYPERTENSION</a>",
+			"conditions":[
+			      { "condition":"Hypertension",
+				"drugs":[
+					{
+					"name":"Hydralazine",
+					"usage":["PIV/IM 0.1-0.2 mg/kg over 1-2 minutes q4hrs prn (max 20 mg)",
+						"Good choice during prenancy"]
+			      		},
+			      		{ 
+					"name":"Labetalol",
+					"usage":["IV bolus: 0.2-1 mg/kg (max 40 mg) slow push over 2-3 minutes)",
+						  "Continuous IV infusion: 0.25-3 mg/kg/hr titrated to desired effect",
+						   "Do not use in asthma patient"]
+	     				},
+					{
+					"name":"Nicardipine",
+					"usage":["JPO/IV: 1mg/kg (max 60mg)",
+						"Continuous IV infusion: 0.5-3 mcg/kg/min titrated to desired effect",
+						"Do not use with increased ICP"]
+					},
+					{
+					"name":"Nifedipine",
+					"usage":["PO/sublingual capsule: noite amd swallow",
+						"0.25-0.5 mg/kg (max 10mg) q4hrs prn (max 1-2 mg/kg/day)"]
+					},
+					{
+					"name":"Sodium Nitroprusside[Nipride]",
+					"usage":["Continuous IV/IO infusion intiate at 0.3-0.5 mcg/kg/min and titrate (max 8-10 mcg/kg/min)",
+						"NOTE: if desired effects not achieved after 10 minutes at 10 mcg/kg/min then discontinue!"]
+					}]
+				}]
+		},
+		{
+			"situation":"OVERDOSE/POISONING MEDICATIONS<br>Call Poison Control Center at 800-222-1222",
+			"conditions":[
+				{"condition":"<a od='Amphetamine/Methamphetamine Poisoning'>Amphetamine/Methamphetamine Poisoning</a>",
+				"drugs":[
+					{
+					"name":"Lorazepam",
+					"usage":["IV 0.05-0.1 mg/kg; May repeat every 10-15 minutes"]
+					},
+					{
+					"name":"Nitroprusside",
+					"usage":["0.3-0.5 mcg/kg/min, titrate to effect;Max dose 8-10 mcg/kg/min"]
+					},
+					{
+					"name":"Phentolamine",
+					"usage":["0.05-0.1 mg/kg/dose; Max dose 5 mg/dose"]
+					}]
+				},
+				{"condition":"<a id='Benzodiazepine Overdose/Poisoning'>Benzodiazepine Overdose/Poisoning</a>",
+				"drugs":[
+					{
+					"name":"Flumazenil[Romazicon]",
+					"usage":["IV: 0.01 mg/kg (max 0.2 mg/dose) over 15-30 seconds",
+						"May repeat every 1 minute to a max of 0.05 mg/kg or 1 mg (whichever is lower)",
+						"CAUTION: rapid reversal may result in seizures; avoid in mixed exposures (e.g., TCAs, bupropion)"]
+					}]
+				},
+				{"condition":"<a id='Beta-Blocker Overdose'>Beta-Blocker Overdose</a>",
+				"drugs":[
+					{
+					"name":"Glucagon",
+					"usage":["Children: IV bolus: 0.03-0.15 mg/kg bolus over 1 minute",
+						" -----Continuous IV infusion: 0.07 mg/kg/hr (max 5 mg/hr)",
+						"Adolescents"]
+					}]
+				}]
+		}
+
+				
+	
+]}
+
+var output="<div>";
+
+for(var i in data.table){
+
+output+="<div  class=\"situation\"><div><p class=\"text-danger text-center\">"+data.table[i].situation+"</p></div>";
+	for(var j in data.table[i].conditions){
+	  output+="<div class=\"title\"><a id=\""+data.table[i].conditions[j].condition +"\"><p><strong>"+data.table[i].conditions[j].condition+"</strong></p></a></div><div  class=\"dls\">";
+		for(var k in data.table[i].conditions[j].drugs){
+		   output+="<dl><dt><em>"+data.table[i].conditions[j].drugs[k].name+"</em></dt>";
+			for(var l in data.table[i].conditions[j].drugs[k].usage){
+		   output+="<dd>"+data.table[i].conditions[j].drugs[k].usage[l]+"</dd>";}
+		output+="</dl>";
+		}
+	   output+="</div>";
+	}
+	output+="</div>";
+}	
+output+="</div>";
+
+document.getElementById("holder").innerHTML= output;
+</script>
+
+<div>
+				   <p class="text-danger text-center"><a class="text-danger" id="BRADYCARDIA">PEDIATRIC BRADYCARDIA WITH PULSE AND POOR PERFUSION</a></p> 
+			</div>
+			<div>
+
+<canvas id="firstCanvas" class="canvas" width= "820" height="900"  style="border:1px solid #000000;"></canvas>
+
+       
+        <script>
+            var canvas = document.getElementById("firstCanvas");
+            var ctx = canvas.getContext("2d");
+ 
+                ctx.beginPath();
+                ctx.rect(100,50,500,150);
+                ctx.fillStyle = "#D8E6FF";
+                ctx.fill();
+                ctx.lineWidth= 2;
+                ctx.strokeStyle= "black";
+                ctx.stroke();
+ 
+            var x= 120;
+            var y= 95;
+            
+                ctx.font = '11pt Calibri';
+                ctx.fillStyle = 'black';
+ 
+ 
+                ctx.fillText('Identify and Treat Underlying Cause',200, 75);
+                ctx.fillText('Maintain patent airway: assist breathing as necessary', x, y);
+                ctx.fillText('Oxygen', x, y+20);
+                ctx.fillText('Cardiac monitor to identify rhythm; monitor blood pressure and oximetry', x, y+40);
+                ctx.fillText('IV/IO access',x,y+60);
+                ctx.fillText('12-Lead ECG if available; do NOT delay therapy',x,y+80);
+                
+		ctx.beginPath();
+		ctx.moveTo(360, 200);
+		ctx.lineTo(360, 250);
+		ctx.moveTo(356, 239);
+		ctx.lineTo(360, 250);
+		ctx.moveTo(364, 239);
+		ctx.lineTo(360, 250);
+		ctx.stroke();
+
+
+		
+
+                ctx.beginPath();
+                ctx.rect(150,250,550,30);
+                ctx.fillStyle = "#D8E6FF";
+                ctx.fill();
+                ctx.lineWidth=2;
+                ctx.strokeStyle= "black";
+                ctx.stroke();
+                
+                ctx.font = '11pt Calibri';
+                ctx.fillStyle = 'black';
+                
+                ctx.fillText('Cardiopulmonary Compromise continues?',300, 270);
+
+ctx.beginPath();
+ctx.moveTo(170,280);
+ctx.lineTo(170,350);
+ctx.moveTo(166,340);
+ctx.lineTo(170,350);
+ctx.moveTo(174,340);
+ctx.lineTo(170,350);
+ctx.stroke();    
+
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';  
+ctx.fillText('No',180,320);          
+ 
+ function roundRect(x, y, w, h, radius)
+{
+  var canvas = document.getElementById("firstCanvas");
+  var ctx = canvas.getContext("2d");
+  var r = x + w;
+  var b = y + h;
+  ctx.beginPath();
+  ctx.moveTo(x+radius, y);
+  ctx.lineTo(r-radius, y);
+  ctx.quadraticCurveTo(r, y, r, y+radius);
+  ctx.lineTo(r, y+h-radius);
+  ctx.quadraticCurveTo(r, b, r-radius, b);
+  ctx.lineTo(x+radius, b);
+  ctx.quadraticCurveTo(x, b, x, b-radius);
+  ctx.lineTo(x, y+radius);
+  ctx.quadraticCurveTo(x, y, x+radius, y);
+  ctx.fillStyle = "#D8E6FF";
+  ctx.fill();
+  ctx.lineWidth="2";
+  ctx.strokeStyle="black";
+  ctx.stroke();
+}
+                roundRect(70, 350, 130, 150, 15);
+
+
+
+
+            var x= 90;
+            var y= 390;
+            
+                ctx.font = '11pt Calibri';
+                ctx.fillStyle = 'black';
+                ctx.fillText('Support ABCs',x,y);
+                ctx.fillText('Give oxygen', x, y+20);
+                ctx.fillText('Observe',x, y+40);
+                ctx.fillText('Consider expert ',x,y+60);
+                ctx.fillText('consultation',x+7,y+80);
+
+
+ctx.beginPath();
+ctx.moveTo(470,280);
+ctx.lineTo(470,330);
+ctx.moveTo(466,320);
+ctx.lineTo(470,330);
+ctx.moveTo(474,320);
+ctx.lineTo(470,330);
+ctx.stroke();                
+
+		
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('Yes',480,310);
+
+ 
+ctx.beginPath();  
+ctx.moveTo(360,330)
+ctx.lineTo(620,330)
+ctx.lineTo(665,375)
+ctx.lineTo(620,420)
+ctx.lineTo(360,420);
+ctx.lineTo(315,375);
+ctx.closePath();
+ctx.fillStyle = "#D8E6FF";
+ctx.fill();
+ctx.lineWidth=2;
+ctx.strokeStyle= "black";
+ctx.stroke();
+		
+
+          
+            var x= 400;
+            var y= 360;
+                
+                ctx.font = '11pt Calibri';
+                ctx.fillStyle = 'black';
+                ctx.fillText('CPR if HR<60/min with poor',x,y);
+                ctx.fillText('perfusion despite oxygenation and', x-10, y+20);
+                ctx.fillText('ventilation',x+40, y+40);
+
+
+                
+roundRect(315,450,350,50,15);
+                ctx.font = '11pt Calibri';
+                ctx.fillStyle = 'black';
+                ctx.fillText('Bradycardia persist?',418,478);
+                
+               
+ctx.beginPath();
+ctx.moveTo(470,420);
+ctx.lineTo(470,450);
+ctx.moveTo(466,440);
+ctx.lineTo(470,450);
+ctx.moveTo(474,440);
+ctx.lineTo(470,450);
+ctx.stroke(); 
+
+ctx.beginPath();
+ctx.moveTo(315,470);
+ctx.lineTo(200,470);
+ctx.moveTo(210,466);
+ctx.lineTo(200,470);
+ctx.moveTo(210,474);
+ctx.lineTo(200,470);
+ctx.stroke(); 
+
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('No',250,485);
+
+		ctx.beginPath();
+                ctx.rect(145,557,530,170);
+                ctx.fillStyle = "#D8E6FF";
+                ctx.fill();
+                ctx.lineWidth= 2;
+                ctx.strokeStyle= "black";
+                ctx.stroke();
+ 
+            var x= 170;
+            var y= 590;
+            
+                ctx.font = '11pt Calibri';
+                ctx.fillStyle = 'black';
+ 
+ 
+                ctx.fillText('•  Epinephrine 1:10,000 IV/IO:0.1 mL/kg (0.01mg/kg), repeat every 3-5 minutes',x, y);
+                
+                ctx.fillText('•  Epinephrine 1:1,000 ETT (no IV/IO access): 0.1 mL/kg (0.1 mg/kt)', x, y+20);
+                ctx.fillText('•  Atropine IV/IO: for increased vagal tone or primary AV block', x, y+40);
+                ctx.fillText('    0.02 mg/kg (min 0.1 mg and max 0.5 mg), may repeat once in 3-5 minutes',x,y+60);
+                ctx.fillText('•  Consider transthoracic pacing/transvenous pacing',x,y+80);
+                ctx.fillText('•  Treat underlying cause(s)',x,y+100);
+
+ctx.beginPath();
+ctx.moveTo(470,500);
+ctx.lineTo(470,557);
+ctx.moveTo(466,547);
+ctx.lineTo(470,557);
+ctx.moveTo(474,547);
+ctx.lineTo(470,557);
+ctx.stroke(); 
+
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('Yes',480,530);
+
+ctx.beginPath();
+ctx.moveTo(360,727);
+ctx.lineTo(360,760);
+ctx.moveTo(356,750);
+ctx.lineTo(360,760);
+ctx.moveTo(364,750);
+ctx.lineTo(360,760);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(220,760);
+ctx.lineTo(500,760);
+ctx.lineTo(500,840);
+ctx.lineTo(360,860);
+ctx.lineTo(220,840);
+ctx.lineTo(220,760);
+ctx.closePath(); 
+ctx.fillStyle = "#D8E6FF";
+ctx.fill();
+ctx.lineWidth=2;
+ctx.strokeStyle= "black";
+ctx.stroke();
+
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('If Pulseless arrest develops, go to ',267,800);
+ctx.fillText('Cardiac Arrest Algorithm',287,820);
+  </script>
+
+						
+				</div>
+			   
+<div>
+				   <p class="text-danger text-center"><a class="text-danger" id="TACHYCARDIA">PEDIATRIC TACHYCARDIA WITH PULSE AND POOR PERFUSION</a></p> 
+			</div>
+			<div>
+<canvas id="secondCanvas" class="canvas" width= "820" height="1100"  style="border:1px solid #000000;"></canvas>
+
+        <script>
+            var canvas = document.getElementById("secondCanvas");
+            var ctx = canvas.getContext("2d");  
+
+function  filledRect(x,y,w,h)
+{   
+  var canvas = document.getElementById("secondCanvas");
+  var ctx = canvas.getContext("2d");
+  ctx.beginPath();
+  ctx.rect(x,y,w,h);
+  ctx.fillStyle = "#D8E6FF";
+  ctx.fill();
+  ctx.lineWidth=2;
+  ctx.strokeStyle= "black";
+  ctx.stroke();
+}
+
+function  arrow(x,y,length)
+{
+  var canvas = document.getElementById("secondCanvas");
+  var ctx = canvas.getContext("2d");
+  ctx.beginPath();
+  ctx.moveTo(x,y);
+  ctx.lineTo(x,y+length);
+  ctx.moveTo(x-4,y+length-10);
+  ctx.lineTo(x,y+length);
+  ctx.moveTo(x+4,y+length-10);
+  ctx.lineTo(x,y+length);
+  ctx.stroke(); 
+}
+
+ 
+ function roundRect(x, y, w, h, radius)
+{
+  var canvas = document.getElementById("secondCanvas");
+  var ctx = canvas.getContext("2d");
+  var r = x + w;
+  var b = y + h;
+  ctx.beginPath();
+  ctx.moveTo(x+radius, y);
+  ctx.lineTo(r-radius, y);
+  ctx.quadraticCurveTo(r, y, r, y+radius);
+  ctx.lineTo(r, y+h-radius);
+  ctx.quadraticCurveTo(r, b, r-radius, b);
+  ctx.lineTo(x+radius, b);
+  ctx.quadraticCurveTo(x, b, x, b-radius);
+  ctx.lineTo(x, y+radius);
+  ctx.quadraticCurveTo(x, y, x+radius, y);
+  ctx.fillStyle = "#D8E6FF";
+  ctx.fill();
+  ctx.lineWidth="2";
+  ctx.strokeStyle="black";
+  ctx.stroke();
+}
+
+
+filledRect(90,30,500,150);
+arrow(430,180,55);
+  
+ 
+            var x= 105;
+            var y= 75;
+            
+                ctx.font = '11pt Calibri';
+                ctx.fillStyle = 'black';
+ 
+ 
+                ctx.fillText('Identify and Treat Underlying Cause', 170,55);
+                
+                ctx.fillText('•  Maintain patent airway: assist breathing as necessary', x, y);
+                ctx.fillText('•  Oxygen', x, y+20);
+                ctx.fillText('•  Cardiac monitor to identify rhythm; monitor blood pressure and oximetry',x,y+40);
+                ctx.fillText('•  IV/IO access',x,y+60);
+                ctx.fillText('•  12-lead ECG if available; do NOT delay therapy',x,y+80);
+
+roundRect(375,235,170,40,5);
+
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('Evaluate QRS duration', 395,260);
+
+roundRect(80,230,170,55,5);
+
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('Evaluate rhythm', 117,255);
+ctx.fillText('with 12-lead ECG',114, 272);
+
+ctx.beginPath();
+ctx.moveTo(375,255);
+ctx.lineTo(250,255);
+ctx.moveTo(260,251);
+ctx.lineTo(250,255);
+ctx.moveTo(260,259);
+ctx.lineTo(250,255);
+ctx.stroke(); 
+
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('QRS normal', 273,230);
+ctx.fillText('(≤0.09 sec)', 276,245);
+
+filledRect(550,320,165,50);
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('Possible Ventricular', 570,340);
+ctx.fillText('Tachycardia', 590,358);
+
+ctx.beginPath();
+ctx.moveTo(545,255);
+ctx.lineTo(630,255);
+ctx.lineTo(630,320);
+ctx.moveTo(626,310);
+ctx.lineTo(630,320);
+ctx.moveTo(634,310);
+ctx.lineTo(630,320);
+ctx.stroke();
+
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText(' QRS wide',565,228);
+ctx.fillText('>0.09 sec)', 565,245);
+
+
+filledRect(290,330,230,195);
+ctx.font = '11pt Calibri';
+  var x= 295;
+  var y= 390;
+ctx.fillStyle = 'black';
+ctx.fillText('Probable Supraventricular',320,350);
+ctx.fillText('Tachycardia',350,365);
+ctx.fillText('•  Compatible history', x, y);
+ctx.fillText('   (vague, nonspecific; history of', x, y+20);
+ctx.fillText('   abrupt rate change)',x,y+40);
+ctx.fillText('•  P waves absent/abnormal',x,y+60);
+ctx.fillText('•  HR not variable with activity',x,y+80);
+ctx.fillText('•  Infants:rates usually ≥220/min',x,y+100);
+ctx.fillText('•  Children: rate usually ≥ 180/min',x,y+120);
+
+filledRect(25,340,230,185);
+ctx.font = '11pt Calibri';
+  var x= 35;
+  var y= 390;
+ctx.fillStyle = 'black';
+ctx.fillText('Probable Supraventricular',60,365);
+ctx.fillText('•  Compatible history', x, y);
+ctx.fillText('   (vague, nonspecific; history of', x, y+20);
+ctx.fillText('   abrupt rate change)',x,y+40);
+ctx.fillText('•  P waves absent/abnormal',x,y+60);
+ctx.fillText('•  HR not variable with activity',x,y+80);
+ctx.fillText('•  Infants:rates usually ≥220/min',x,y+100);
+ctx.fillText('•  Children: rate usually ≥ 180/min',x,y+120);
+
+arrow(165,285,55);
+
+ctx.beginPath();
+ctx.moveTo(250,270);
+ctx.lineTo(330,270);
+ctx.lineTo(330,330);
+ctx.moveTo(326,320);
+ctx.lineTo(330,330);
+ctx.moveTo(334,320);
+ctx.lineTo(330,330);
+ctx.stroke();
+
+filledRect(75,570,180,40);
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('Search for and treat cause',85,595);
+
+arrow(165,525,45);
+
+roundRect(555,425,220,100,15);
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('Cardiopulmonary Compromise?',575,455);
+ctx.fillText('•  Hypotension',565,480);
+ctx.fillText('•  Acutely altered mental status',565,500);
+
+arrow(630,370,55);
+
+filledRect(490,565,130,53);
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('Synchronized',515,585);
+ctx.fillText('cardioversion',515,605);
+
+
+filledRect(650,565,120,115);
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('    Consider',665,585);
+ctx.fillText(' adenosine if',665,605);
+ctx.fillText('rhythm regular',665,625);
+ctx.fillText('    and QRS',665,645);
+ctx.fillText('Monomorphic',665,665);
+
+arrow(600,525,40);
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('Yes',570,550);
+
+arrow(710,525,40);
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('No',730,550);
+
+filledRect(80,640,200,40);
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('Consider vagal maneuvers',105,665);
+
+filledRect(170,720,340,90);
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('•  Establish IV/IO access, give adenosine',190,740);
+ctx.fillText('                         OR',190,760);
+ctx.fillText('•  If IV/IO access not available, or if adenosine',190,780);
+ctx.fillText('    ineffective, synchronized cardioversion',190,800);
+
+arrow(405,525,195);
+
+ctx.beginPath();
+ctx.moveTo(280,660);
+ctx.lineTo(405,660);
+ctx.moveTo(395,656);
+ctx.lineTo(405,660)
+ctx.moveTo(395,664);
+ctx.lineTo(405,660);
+ctx.stroke();
+
+filledRect(570,735,200,75);
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText(' Expect consultation advised',580,755);
+ctx.fillText('•   Amiodarone',580,775);
+ctx.fillText('•   Procainamide',580,795);
+
+arrow(710,680,55);
+
+filledRect(80,850,630,235);
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('Doses/Details',350,880);
+ctx.fillText('--- Synchronized Cardioversion',120,900);
+ctx.fillText('     Begin with 0.5-1 J/kg; if not effective, increase to 2 J/kg.',120,920);
+ctx.fillText('     Sedate if needed, but do NOT delay cardioversion',120,940);
+ctx.fillText('--- Adenosine IV/IO dose',120,960);
+ctx.fillText('     First dose: 0.1 mg/kg (max 6 mg) rapid bolus',120,980);
+ctx.fillText('     Second dose: 0.2 mg/kg (max 12 mg) rapid bolus',120,1000);
+ctx.fillText('--- Amiodarone IV/IO dose: 5 mg/kg over 20-60 minutes',120,1020);
+ctx.fillText('                  or',120,1040);
+ctx.fillText('--- Procainamide IV/IO dose: 15mg/kg over 30-60 minutes',120,1060);
+
+</script>
+
+									
+			</div>
+
+<div>
+				   <p class="text-danger text-center"><a class="text-danger" id="CARDIAC">PEDIATRIC CARDIAC ARREST</a></p> 
+			</div>
+			<div>
+
+<canvas id="thirdCanvas" class="canvas" width= "820" height="1160"  style="border:1px solid #000000;"></canvas>
+            <script>
+                var canvas = document.getElementById('thirdCanvas');
+                var ctx= canvas.getContext('2d');
+
+
+function  filledRect(x,y,w,h)
+{
+    var canvas = document.getElementById("thirdCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.beginPath();
+    ctx.rect(x,y,w,h);
+    ctx.fillStyle = "#D8E6FF";
+    ctx.fill();
+    ctx.lineWidth=2;
+    ctx.strokeStyle= "black";
+    ctx.stroke();
+}
+            
+            function  arrow(x,y,length)
+            {
+                var canvas = document.getElementById("thirdCanvas");
+                var ctx = canvas.getContext("2d");
+                ctx.beginPath();
+                ctx.moveTo(x,y);
+                ctx.lineTo(x,y+length);
+                ctx.moveTo(x-4,y+length-10);
+                ctx.lineTo(x,y+length);
+                ctx.moveTo(x+4,y+length-10);
+                ctx.lineTo(x,y+length);
+                ctx.stroke();
+            }
+            
+            
+            function roundRect(x, y, w, h, radius)
+            {
+                var canvas = document.getElementById("thirdCanvas");
+                var ctx = canvas.getContext("2d");
+                var r = x + w;
+                var b = y + h;
+                ctx.beginPath();
+                ctx.moveTo(x+radius, y);
+                ctx.lineTo(r-radius, y);
+                ctx.quadraticCurveTo(r, y, r, y+radius);
+                ctx.lineTo(r, y+h-radius);
+                ctx.quadraticCurveTo(r, b, r-radius, b);
+                ctx.lineTo(x+radius, b);
+                ctx.quadraticCurveTo(x, b, x, b-radius);
+                ctx.lineTo(x, y+radius);
+                ctx.quadraticCurveTo(x, y, x+radius, y);
+                ctx.fillStyle = "#D8E6FF";
+                ctx.fill();
+                ctx.lineWidth="2";
+                ctx.strokeStyle="black";
+                ctx.stroke();
+            }
+         
+         
+
+function shock(x,y)
+{
+    var canvas = document.getElementById("thirdCanvas");
+    var ctx = canvas.getContext("2d");
+    
+    ctx.beginPath();
+    ctx.moveTo(x,y);
+    ctx.lineTo(x+14,y+5);
+    ctx.lineTo(x+16,y+16);
+    ctx.lineTo(x+12,y+13);
+    ctx.lineTo(x+19,y+25);
+    ctx.lineTo(x+15,y+23);
+    ctx.lineTo(x+19,y+37);
+    ctx.lineTo(x+9,y+23);
+    ctx.lineTo(x+13,y+25);
+    ctx.lineTo(x+6,y+13);
+    ctx.lineTo(x+10,y+16);
+    ctx.closePath();
+    ctx.fillStyle = 'black';
+    ctx.fill();
+}
+
+function oval(centerX,centerY,radius,scaleX)
+{
+              var canvas = document.getElementById('thirdCanvas');
+              var ctx = canvas.getContext('2d');
+              
+              // save state
+              ctx.save();
+              
+              // translate context
+              ctx.translate(centerX, centerY);
+              
+              // scale context horizontally
+              ctx.scale(scaleX, 1);
+              
+              // draw circle which will be stretched into an oval
+              ctx.beginPath();
+              ctx.arc(0, 0, radius, 0, 2 * Math.PI, false);
+              
+              // restore to original state
+              ctx.restore();
+              
+              // apply styling
+              ctx.fillStyle = '#D8E6FF';
+              ctx.fill();
+              ctx.lineWidth = 2;
+              ctx.strokeStyle = 'black';
+              ctx.stroke();
+}
+
+
+function underLine(text,x,y)
+{
+    var canvas = document.getElementById('thirdCanvas');
+    var ctx = canvas.getContext('2d');
+    var metrics=ctx.measureText(text);
+    var width=metrics.width;
+    
+    ctx.beginPath();
+    ctx.moveTo(x,y+3);
+    ctx.lineTo(x+width,y+3);
+    ctx.stroke();
+}
+            
+function boldText(text,x,y)
+{
+var canvas = document.getElementById('thirdCanvas');
+var ctx = canvas.getContext('2d');
+                
+ctx.font = 'bold 11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText(text,x,y);
+}
+
+
+
+filledRect(600,78,180,1030);
+
+oval(310,74,45,3.5);
+
+var x= 225;
+var y= 56;
+
+ctx.font='11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('         Start CPR',x,y);
+ctx.fillText('•   Give oxygen',x,y+20);
+ctx.fillText('•   Attach monitor/defibrillator',x,y+40);
+ctx.fillText('1',180,30);
+
+roundRect(250,155,120,70,15);
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('  Rhythm',275,185);
+ctx.fillText('shockable?',275,205);
+
+arrow(310,119,36);
+
+filledRect(395,240,160,40);
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('Asystole/PEA',435,265);
+
+ctx.beginPath();
+ctx.moveTo(370,190);
+ctx.lineTo(475,190);
+ctx.lineTo(475,240);
+ctx.moveTo(471,230);
+ctx.lineTo(475,240);
+ctx.moveTo(479,230);
+ctx.lineTo(475,240);
+ctx.stroke();
+
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('No',480,190);
+ctx.fillText('9',565,255);
+
+filledRect(60,240,160,40);
+
+ctx.beginPath();
+ctx.moveTo(250,190);
+ctx.lineTo(140,190);
+ctx.lineTo(140,240);
+ctx.moveTo(136,230);
+ctx.lineTo(140,240);
+ctx.moveTo(144,230);
+ctx.lineTo(140,240);
+ctx.stroke();
+
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('VF/VT',115,265);
+
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('Yes',110,190);
+ctx.fillText('2',40,255);
+
+oval(140,425,35,2.5);
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('     CPR 2 min',90,420);
+ctx.fillText('•   IO/IV access',90,440);
+
+shock(130,315);
+arrow(140,280,33);
+arrow(140,353,37);
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('3  Shock',70,340);
+
+oval(475,425,80,1.1);
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('     CPR 2 min',425,390);
+ctx.fillText('•   IO/IV access',425,410);
+ctx.fillText('•   Epinephrine',425,430);
+ctx.fillText('    every 3-5 min',425,450);
+ctx.fillText('•   Consider',425,470);
+ctx.fillText('4',60,395);
+
+arrow(475,280,65);
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('10',365,390);
+
+roundRect(60,500,160,60,15);
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('     Rhythm',93,525);
+ctx.fillText('   shockable?',93,545);
+arrow(140,460,40);
+
+roundRect(380,560,135,50,15);
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('     Rhythm',400,580);
+ctx.fillText('   shockable?',400,600);
+arrow(475,505,55);
+
+oval(180,715,50,2.5);
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('              CPR 2 min',90,700);
+ctx.fillText('•   Epinephrine every 3-5 min',90,720);
+ctx.fillText('•   Consider advanced airway',90,740);
+
+arrow(140,560,30);
+shock(130,595);
+arrow(140,633,35);
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('5  Shock',70,610);
+ctx.fillText('6', 60,680);
+
+roundRect(105,830,150,40,10);
+oval(180,1010,50,2.2);
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('Rhythm shockable?',120,855);
+ctx.fillText('          CPR 2 min',105,990);
+ctx.fillText('•  Amiodarone',105,1010);
+ctx.fillText('•  Treat reversible causes',105,1030);
+
+arrow(140,762,67);
+arrow(140,870,25);
+shock(130,898);
+arrow(140,930,35);
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('7   Shock',65,920);
+ctx.fillText('8', 65,980);
+
+
+oval(450,710,50,2);
+roundRect(375,830,150,40,10);
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('      CPR 2 min',400,690);
+ctx.fillText('•    Treat',400,710);
+ctx.fillText('reversible causes',400,730);
+ctx.fillText('Rhythm shockable?',390,855);
+ctx.fillText('11',350,680);
+
+arrow(475,610,53);
+arrow(475,758,72);
+arrow(475,870,150);
+
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('No',445,640);
+
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('No',445,945);
+
+ctx.beginPath();
+ctx.moveTo(515,585);
+ctx.lineTo(560,585);
+ctx.lineTo(560,935);
+ctx.moveTo(556,925);
+ctx.lineTo(560,935);
+ctx.moveTo(564,925);
+ctx.lineTo(560,935);
+ctx.stroke();
+
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('Yes',535,575);
+
+ctx.beginPath();
+ctx.moveTo(525,850);
+ctx.lineTo(560,850);
+ctx.stroke();
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('Yes',525,830);
+
+filledRect(500,935,70,50);
+filledRect(310,1020,250,100);
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText(' Go to',515,955);
+ctx.fillText(' 5 or 7',515,975);
+ctx.fillText('•  Asystole/PEA go to 10 or 11',330,1045);
+ctx.fillText('•  Organized rhythm -- check pulse',330,1065);
+ctx.fillText('•  Pulse presenmt (ROSC) -- post-',330,1085);
+ctx.fillText('   cardiac arrest care',330,1105);
+
+ctx.beginPath();
+ctx.moveTo(50,526);
+ctx.lineTo(60,530);
+ctx.moveTo(50,534);
+ctx.lineTo(58,530);
+ctx.lineTo(30,530);
+ctx.lineTo(30,1010);
+ctx.lineTo(70,1010);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(220,530);
+ctx.lineTo(330,530);
+ctx.lineTo(330,1020);
+ctx.moveTo(326,1010);
+ctx.lineTo(330,1020);
+ctx.moveTo(334,1010);
+ctx.lineTo(330,1020);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(255,850);
+ctx.lineTo(330,850);
+ctx.stroke();
+
+
+var x=610;
+var y=95;
+boldText('Shock Energy for',x,y);
+underLine('Shock Energy for',x,y);
+boldText('Defibrillation',x,y+20);
+underLine('Defibrillation',x,y+20);
+boldText('Drug Therapy',x,y+135);
+underLine('Drug Therapy',x,y+135);
+boldText('Epinephine IV/IO Dose:',x,y+155);
+boldText('Amiodarone IV/IO Dose:',x,y+305);
+boldText('Advanced Airway',x,y+415);
+underLine('Advanced Airway',x,y+415);
+boldText('Return of Spontaneous',x,y+665);
+underLine('Return of Spontaneous',x,y+665);
+boldText('Circulation (ROSC)',x,y+685);
+underLine('Circulation (ROSC)',x,y+685);
+boldText('Reversible Causes',x,y+795);
+underLine('Reversible Causes',x,y+795);
+
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('First shock 2 J/kg, second',x,y+40);
+ctx.fillText('shock 4 J/kg, subsequent',x,y+60);
+ctx.fillText('shock ≥ 4 J/kg,',x,y+80);
+ctx.fillText('max 10 J/kg or adult dose',x,y+100);
+ctx.fillText('0.01 mg/kg (0.1 mL/kg of',x,y+175);
+ctx.fillText('1:10,000 concentration)',x,y+195);
+ctx.fillText('If no IV/IO acces, may',x,y+215);
+ctx.fillText('give endotracheal dose:',x,y+235);
+ctx.fillText('0.1 mg/lg (0.2 mL/kg of',x,y+255);
+ctx.fillText('1:1,000 concentration)',x,y+275);
+ctx.fillText('5 mg/kg bolus during',x,y+325);
+ctx.fillText('cardiac arrest. May repeat',x,y+345);
+ctx.fillText('up to 2 times for',x,y+365);
+ctx.fillText('refractory VF/pulseless VT.',x,y+385);
+ctx.fillText('•  Endotracheal intubation',x,y+435);
+ctx.fillText('   of supraglottic advanced',x,y+455);
+ctx.fillText('   airway',x,y+475);
+ctx.fillText('•  Waveform capnography',x,y+495);
+ctx.fillText('   or capnometry to',x,y+515);
+ctx.fillText('   confirm and monitor',x,y+535);
+ctx.fillText('   ET tube placement',x,y+555);
+ctx.fillText('•  Once advanced airway',x,y+575);
+ctx.fillText('   in place give 1 breath',x,y+595);
+ctx.fillText('   every 6-8 sec',x,y+615);
+ctx.fillText('   ( 8-10 breaths per min)',x,y+635);
+ctx.fillText('•  Pulse and blood pressure',x,y+705);
+ctx.fillText('•  Spontaneous arterial',x,y+725);
+ctx.fillText('   preasure waves with',x,y+745);
+ctx.fillText('   intra-arterial monitoring',x,y+765);
+ctx.fillText('-Hypovolemia',x,y+815);
+ctx.fillText('-Hypoxia',x,y+835);
+ctx.fillText('-Hydrogen ion (acidosis)',x,y+855);
+ctx.fillText('-Hypoglycemia',x,y+875);
+ctx.fillText('-Hypo-/hyperkalemia',x,y+895);
+ctx.fillText('-Tension pneumothorax',x,y+915);
+ctx.fillText('-Tamponade, cardia',x,y+935);
+ctx.fillText('-Toxins',x,y+955);
+ctx.fillText('-Thrombosis, pulmonary',x,y+975);
+ctx.fillText('-Thrombosis, coronary',x,y+995);
+
+</script>
+
+			</div>
+
+<div>
+				   <p class="text-danger text-center"><a class="text-danger" id="RESUSCITATION">NEWBORN RESUSCITATION</a></p> 
+			</div>
+			<div>
+<canvas id="fourthCanvas" class="canvas" width= "820" height="1100"  style="border:1px solid #000000;"></canvas>
+
+
+            <script>
+                var canvas = document.getElementById('fourthCanvas');
+                var ctx= canvas.getContext('2d');
+
+function  filledRect(x,y,w,h)
+{
+    var canvas = document.getElementById("fourthCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.beginPath();
+    ctx.rect(x,y,w,h);
+    ctx.fillStyle = "#D8E6FF";
+    ctx.fill();
+    ctx.lineWidth=2;
+    ctx.strokeStyle= "black";
+    ctx.stroke();
+}
+            
+function  arrow(x,y,length)
+{
+    var canvas = document.getElementById("fourthCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.beginPath();
+    ctx.moveTo(x,y);
+    ctx.lineTo(x,y+length);
+    ctx.moveTo(x-4,y+length-10);
+    ctx.lineTo(x,y+length);
+    ctx.moveTo(x+4,y+length-10);
+    ctx.lineTo(x,y+length);
+    ctx.stroke();
+}
+
+function text(words,x,y)
+{
+    var canvas = document.getElementById("fourthCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.font = '11pt Calibri';
+    ctx.fillStyle = 'black';
+    ctx.fillText(words,x,y);
+
+}
+            
+function boldText(text,x,y)
+{
+    var canvas = document.getElementById('fourthCanvas');
+    var ctx = canvas.getContext('2d');
+                
+    ctx.font = 'bold 11pt Calibri';
+    ctx.fillStyle = 'black';
+    ctx.fillText(text,x,y);
+}
+            
+            
+            
+filledRect(250,55,215,75);
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('    Term gestation?',295,75);
+ctx.fillText('Breathing and crying?',295,95);
+ctx.fillText('      Good tone?',295,115);
+
+filledRect(225,190,265,55);
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('Warm, clear airway if necessary,',255,210);
+ctx.fillText('              dry stimulate',255,230);
+
+arrow(355,130,60);
+ctx.font = '11pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText('No',325,160);
+
+filledRect(235,290,245,40);
+text('HR below 100, gasping, or apnea?',253,313);
+arrow(355,245,45);
+
+filledRect(230,370,255,65);
+text('Positive Pressure Ventilation (PPV),',250,395);
+text('           SPO2 monitoring',250,415);
+arrow(355,330,40);
+
+filledRect(280,475,155,40);
+text('HR below 100?',315,500);
+arrow(355,435,40);
+
+filledRect(293,545,130,40);
+text('Take ventilation',310,570);
+arrow(355,515,30);
+text('Yes',330,530);
+
+filledRect(280,615,155,40);
+text('HR below 60?',315,640);
+arrow(355,585,30);
+
+
+ctx.beginPath();
+ctx.moveTo(280,635)
+ctx.lineTo(235,635);
+ctx.lineTo(235,495);
+ctx.lineTo(280,495);
+ctx.moveTo(270,491);
+ctx.lineTo(280,495);
+ctx.moveTo(270,499);
+ctx.lineTo(280,495);
+ctx.stroke();
+text('No',210,630);
+
+
+filledRect(250,695,215,125);
+text('Consider intubation',295,740);
+text('Chest compressions',295,760);
+text('Coordinate with PPV',295,780);
+arrow(355,655,40);
+text('Yes',330,680);
+
+filledRect(280,860,155,40);
+arrow(355,820,40);
+text('HR below 60?',315,885);
+
+ctx.beginPath();
+ctx.moveTo(375,900);
+ctx.lineTo(375,935);
+ctx.moveTo(335,935);
+ctx.lineTo(335,910);
+ctx.moveTo(331,920);
+ctx.lineTo(335,910);
+ctx.moveTo(339,920);
+ctx.lineTo(335,910);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.arc(355,935, 20, 0, Math.PI, false);
+ctx.stroke();
+text('Yes',385,930);
+
+filledRect(280,955,155,40);
+text('IV epinephrine',310,980);
+
+filledRect(25,850,215,60);
+text('Take ventilation corrective steps',35,875);
+text('     Intubate if no chest rise',35,895);
+
+ctx.beginPath();
+ctx.moveTo(240,880);
+ctx.lineTo(280,880);
+ctx.moveTo(247,876);
+ctx.lineTo(240,880);
+ctx.moveTo(247,884);
+ctx.lineTo(240,880);
+ctx.moveTo(273,876);
+ctx.lineTo(280,880);
+ctx.moveTo(273,884);
+ctx.lineTo(280,880);
+ctx.stroke();
+
+filledRect(70,950,130,60);
+text('     Consider:',85,975);
+text('•  Hypovolemia',85,995);
+arrow(135,910,40);
+
+filledRect(550,45,210,115);
+boldText('          Routine Care',570,65);
+text('•  Provide warmth',570,85);
+text('•  Clear airway if necessary',570,105);
+text('•  Dry',570,125);
+text('•  Ongoing evaluation',570,145);
+ctx.beginPath();
+ctx.moveTo(465,88);
+ctx.lineTo(550,88);
+ctx.moveTo(540,84);
+ctx.lineTo(550,88);
+ctx.moveTo(540,92);
+ctx.lineTo(550,88);
+ctx.stroke();
+text('Yes, stay',480,60);
+text('with mother',470,75);
+
+
+
+ctx.beginPath();
+ctx.moveTo(710,310);
+ctx.lineTo(735,310);
+ctx.lineTo(735,160);
+ctx.moveTo(731,170);
+ctx.lineTo(735,160);
+ctx.moveTo(739,170);
+ctx.lineTo(735,160);
+ctx.stroke();
+text('No',705,250);
+
+filledRect(535,290,175,40);
+text('Labored breathing or',555,315);
+ctx.beginPath();
+ctx.moveTo(480,310);
+ctx.lineTo(535,310);
+ctx.moveTo(525,306);
+ctx.lineTo(535,310);
+ctx.moveTo(525,314);
+ctx.lineTo(535,310);
+ctx.stroke();
+text('No',500,303);
+arrow(625,330,50);
+text('Yes',595,360);
+
+filledRect(550,380,150,75);
+text('Clear airway SPO2',571,402);
+text('    monitoring',571,422);
+text('  Consider CPAP',571,442);
+arrow(625,455,100);
+
+filledRect(535,555,175,40);
+text('Post-resuscitation care',555,580);
+ctx.beginPath();
+ctx.moveTo(435,495);
+ctx.lineTo(570,495);
+ctx.lineTo(570,555);
+ctx.moveTo(566,545);
+ctx.lineTo(570,555);
+ctx.moveTo(574,545);
+ctx.lineTo(570,555);
+ctx.stroke();
+text('No',475,485);
+
+filledRect(580,650,185,370);
+var x= 580;
+var y= 685;
+
+boldText('  Targeted Preductal SPO2',x,y);
+boldText('            After Birth',x,y+20);
+boldText('           Medications',x,y+170);
+
+text('   1 min    60%-65%',x,y+40);
+text('   2 min    65%-70%',x,y+60);
+text('   3 min    70%-75%',x,y+80);
+text('   4 min    75%-80%',x,y+100);
+text('   5 min    80%-85%',x,y+120);
+text('  10 min   85%-95%',x,y+140);
+text('   Epinephrine',x,y+190);
+text('   1:10,000 IV/IO: 0.1 mL/kg',x,y+205);
+text('   ETT 0.5-1 mL/kg',x,y+220);
+text('   Naloxone',x,y+240);
+text('   IV/IO 0.1 mg/kg',x,y+255);
+text('   Dextrose',x,y+275);
+text('   2 mL/kg D10W',x,y+290);
+text('   IV Fluid Bolus',x,y+305);
+text('   Normal Saline 10 mL/kg',x,y+320);
+
+
+
+
+</script>
+			</div>
+
+<img class="img-responsive" src="emsc-2012.png" alt="emsc">
+
+		    </div>    
+		</div>
+
+<p href="#" class="back-to-top">Back to Top</p>
+
+    </div>
+          
+
+
+
+
+</body>
+</html>
