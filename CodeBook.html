@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -134,7 +134,7 @@ var data= {
 		{
 			"situation":"METABOLIC EMERGENCIES",
 			"conditions":[
-			      { "condition":"<a id='Anaphylaxis'>Anaphylaxis</a>",
+			      { "condition":"<b><i><a id='Anaphylaxis'>Anaphylaxis</a></b></i>",
               
 				"drugs":[
 					{
@@ -152,7 +152,7 @@ var data= {
 					"usage":["JPO/IV: 1mg/kg (max 60mg)"]
 					}]
 				},
-			       {"condition":"<a id='Adrenal Crisis'>Adrenal Crisis</a>",
+			       {"condition":"<b><i><a id='Adrenal Crisis'>Adrenal Crisis</a></b></i>",
 				"drugs":[
 					{
 					"name":"Fludrocortisone [Florinef]",
@@ -166,7 +166,7 @@ var data= {
 						"Older children: 40-60 mg q6hrs"]
 					}]
 				},
-				{"condition":"<a id='Hypoglycemia'>Hypoglycemia</a>",
+				{"condition":"<b><i><a id='Hypoglycemia'>Hypoglycemia</a></b></i>",
 				 "drugs":[
 					 {
 					"name":"Dextrose IV/IO:",
@@ -174,7 +174,7 @@ var data= {
 						"25%: 2-4 mL/kg ----- age: 30 days to 2 years",
 						"50%: 1-2 mL/kg (CVL preferred)  ----- age: > 2 years"]				}]
 				},
-				{"condition":"<a id='Hyperglycemia'>Hyperglycemia</a>",
+				{"condition":"<b><i><a id='Hyperglycemia'>Hyperglycemia</a></b></i>",
 				"drugs":[
 					{
 					"name":"Insulin Regular [HumulinR]",
@@ -182,7 +182,7 @@ var data= {
 						"≥ 6 years: 0.1 units/kg/hr IV continuous infusion for DKA"]
 					}]
 				},
-				{"condition":"<a id='Hyperkalemia'>Hyperkalemia</a>",
+				{"condition":"<b><i><a id='Hyperkalemia'>Hyperkalemia</a></b></i>",
 				"drugs":[
 					{
 					"name":"Albuterol",
@@ -212,7 +212,7 @@ var data= {
 						"Rapid push may produce hypernatremia, decreased  CSF pressure and possible intracranial hemorrhage"]
 					}]
 				},
-				{"condition":"<a id='Hypocalcemia'>Hypocalcemia</a>",
+				{"condition":"<b><i><a id='Hypocalcemia'>Hypocalcemia</a></b></i>",
 				"drugs":[
 					{
 					"name":"Calcium Chloride 10%",
@@ -225,7 +225,7 @@ var data= {
 					"usage":["IV/IO: 60-100 mg/kg (max 3g) over 3-5 minutes"]
 					}]
 				},
-				{"condition":"<a id='Hyponatremia (For Seizures)'>Hyponatremia (For Seizures)</a>",
+				{"condition":"<b><i><a id='Hyponatremia (For Seizures)'>Hyponatremia (For Seizures)</a></b></i>",
 				"drugs":[
 					{
 					"name":"Hypertonic Sodium Chloride 3%",
@@ -239,7 +239,7 @@ var data= {
 		{
 			"situation":"<a id=\"HYPERTENSION\" class=\"text-danger\">HYPERTENSION</a>",
 			"conditions":[
-			      { "condition":"Hypertension",
+			      { "condition":"<b><i>Hypertension</b></i>",
 				"drugs":[
 					{
 					"name":"Hydralazine",
@@ -273,7 +273,7 @@ var data= {
 		{
 			"situation":"OVERDOSE/POISONING MEDICATIONS<br>Call Poison Control Center at 800-222-1222",
 			"conditions":[
-				{"condition":"<a od='Amphetamine/Methamphetamine Poisoning'>Amphetamine/Methamphetamine Poisoning</a>",
+				{"condition":"<b><i><a id='Amphetamine/Methamphetamine Poisoning'>Amphetamine/Methamphetamine Poisoning</a></b></i>",
 				"drugs":[
 					{
 					"name":"Lorazepam",
@@ -288,7 +288,7 @@ var data= {
 					"usage":["0.05-0.1 mg/kg/dose; Max dose 5 mg/dose"]
 					}]
 				},
-				{"condition":"<a id='Benzodiazepine Overdose/Poisoning'>Benzodiazepine Overdose/Poisoning</a>",
+				{"condition":"<b><i><a id='Benzodiazepine Overdose/Poisoning'>Benzodiazepine Overdose/Poisoning</a></b></i>",
 				"drugs":[
 					{
 					"name":"Flumazenil[Romazicon]",
@@ -297,7 +297,7 @@ var data= {
 						"CAUTION: rapid reversal may result in seizures; avoid in mixed exposures (e.g., TCAs, bupropion)"]
 					}]
 				},
-				{"condition":"<a id='Beta-Blocker Overdose'>Beta-Blocker Overdose</a>",
+				{"condition":"<b><i><a id='Beta-Blocker Overdose'>Beta-Blocker Overdose</a></b></i>",
 				"drugs":[
 					{
 					"name":"Glucagon",
@@ -305,26 +305,143 @@ var data= {
 						" -----Continuous IV infusion: 0.07 mg/kg/hr (max 5 mg/hr)",
 						"Adolescents"]
 					}]
-				}]
-		}
+				},
+                {"condition":"<b><i><a id='Amphetamine/Methamphetamine Poisoning'>Amphetamine/Methamphetamine Poisoning</a></b><i/>",
+                "drugs":[
+                {
+                "name":"Lorazepam",
+                "usage":["IV 0.05-0.1 mg/kg; May repeat every 10-15 minutes"]
+                },
+                {
+                "name":"Nitroprusside",
+                "usage":["0.3-0.5 mcg/kg/min, titrate to effect;Max dose 8-10 mcg/kg/min"]
+                },
+                {
+                "name":"Phentolamine",
+                "usage":["0.05-0.1 mg/kg/dose; Max dose 5 mg/dose"]
+                }]
+                },
+                {"condition":"<b><i><a id='Benzodiazepine Overdose/Poisoning'>Benzodiazepine Overdose/Poisoning</a></b></i>",
+                "drugs":[
+                {
+                "name":"Flumazenil[Romazicon]",
+                "usage":["IV: 0.01 mg/kg (max 0.2 mg/dose) over 15-30 seconds",
+                "May repeat every 1 minute to a max of 0.05 mg/kg or 1 mg (whichever is lower)",
+                "CAUTION: rapid reversal may result in seizures; avoid in mixed exposures (e.g., TCAs, bupropion)"]
+                }]
+                },
+                
+                {"condition":"<b><i><a id='Calcium Channel Overdose'>Calcium Channel Overdose</a></b></i>",
+                "drugs":[
+                {
+                "name":"Calcium gluconate 10%",
+                "usage":["IV 0.6 mL/kg (may repeat twice; monitor calcium)"]
+                },
+                {
+                "name":"Regular Insulin",
+                "usage":["IV: 1 unite/kg IV bolus, then 1 unites/kg/hr IV continuous infusion",
+                "Titrated based on blood presure (consult poison control center for more detailed information)"]
+                },
+                {
+                "name":"Dextrose:",
+                "usage":["If initial blood glucose < 250 mg/dL in a child: 0.25 g/kg of 25% dextrose IV",
+                    "Begin 0.5 g/kg/hr dextrose continuous IV infusion",
+                    "(Note:>15% dextrose requires a central line)",
+                    "Monitor blood glucose every 15-30 minutes until consistently 100-200 mg/dL for 4 hours then hourly",
+                    "Titrate dextrose to blood glucose of 100-200 mg/dL",
+                    "Supplemental dextrose may be required to maintain glucose even after insulin discontinuation"]
+                },
+                {
+                "name":"Potassium:",
+                "usage":["Monitor potassium every 4 hours and supplement as needed for potassium <2.5 mEq/L",
+                        "May use other therapies (e.g., Lipid rescue)"]
+                },
+                {
+                "name":"Consult Poison Control Center for dosing:"
+                
+                        
+                }]
+                },
+                
+                {"condition":"<b><i><a id='Opioid Toxicity with Respiratory Depression'>Opioid Toxicity with Respiratory Depression</a></b></i>",
+                "drugs":[
+                {
+                "name":"Naloxone[Narcan]",
+                "usage":["IV/IO/IM/SubQ:<20 kg:0.1 mg/kg;> 20kg: 2 mg"]
+                }
+                ]
+                },
+                
+                {"condition":"<b><i><a id='Organophosphate and Nerve Agent Poisoning'>Organophosphate and Nerve Agent Poisoning</a></b></i>",
+                "drugs":[
+                {
+                "name":"Pralidoxime [2-Pam]",
+                "usage":["IV/IO: Initial 20-50 mg/kg over 15-30 minutes (max 2g)",
+                        "May repeate in 1 hour then q10-12hrs if persistant muscle weakness",
+                        "IM: 15 mg/kg(max 600mg) every 15 minutes for up to 3 doses (max 45 mg/kg or 1800 mg)",
+                        "If severe symptoms, doses 2 and 3 can be given in rapid succession.",
+                        "If symptoms persist, may repeat series in 1 hours.",
+                        "RECOMMENDATION: use in conjuction with atropine"
+                        ]
+                },
+                
+                {
+                "name":"Atropine",
+                "usage":["IV/IO:0.02-0.05 mg/kg (max 5mg) 110-20min until atropine efect then q1-4hrs for at least 24hrs",
+                        "IM: <6.8kg:0.25mg; 6.8-18kg:0.5mg; 18-41kg:1mg; >41kg:2mg",
+                        "Mild: Give 1 injection",
+                        "Severe: Give 1 injection, then in 10 minutes gives 2 additional injection in succession",
+                        "If patient unconscious: Five 3 injuections immediately in rapid succession",
+                        "Atropine effect: tachycardia, dry-flushed skin, mydriasis, and fever"
+                        ]
+                }]
+                },
+                
+                {"condition":"<b><i><a id='Tricyclic Antidepressant or Sodium Channel Blocker'>Tricyclic Antidepressant or Sodium Channel Blocker<br>Overdose/Poisoning</a></b></i>",
+                "drugs":[
+                {
+                "name":"Sodium Bicarbonate",
+                "usage":["IV/IO: 1-2 mEq/kg slow IV/IO push over 5-15 minutes",
+                        "May initiate an infusion to maintain pH 7.45-7.55"
+                        ]
+                }]
+                }
+                
+                
+                
+                ]
+		},
+        
+        
+        {
+        "situation":"RAPID SEQUENCE INTUBATION",
+        "conditions":[
+        { "condition":"<b><i><a id='Pretreatment(if applicable)'>Pretreatment if applicable</a></b></i>",
+        "drugs":[
+        {
+        "name":"Atropine                0.02 mg/kg (min 0.1 mg, max 1 mg)",
+        }]
+        }]
+        }
 
-				
-	
+
+
 ]}
 
 var output="<div>";
 
 for(var i in data.table){
 
-output+="<div  class=\"situation\"><div><p class=\"text-danger text-center\">"+data.table[i].situation+"</p></div>";
-	for(var j in data.table[i].conditions){
-	  output+="<div class=\"title\"><a id=\""+data.table[i].conditions[j].condition +"\"><p><strong>"+data.table[i].conditions[j].condition+"</strong></p></a></div><div  class=\"dls\">";
-		for(var k in data.table[i].conditions[j].drugs){
-		   output+="<dl><dt><em>"+data.table[i].conditions[j].drugs[k].name+"</em></dt>";
+output+="<div  class='situation'><div><p class='text-danger text-center'>"+data.table[i].situation+"</p></div>";
+    for(var j in data.table[i].conditions){
+    output+="<div class='title'><a id=\""+data.table[i].conditions[j].condition +"\"><p><strong><b><i>"+data.table[i].conditions[j].condition+"</b></i></strong></p></a></div><div  class='dls'>";
+        for(var k in data.table[i].conditions[j].drugs){
+        output+="<dl><dt><em>"+data.table[i].conditions[j].drugs[k].name+"</em></dt>";
+               
 			for(var l in data.table[i].conditions[j].drugs[k].usage){
 		   output+="<dd>"+data.table[i].conditions[j].drugs[k].usage[l]+"</dd>";}
 		output+="</dl>";
-		}
+        }
 	   output+="</div>";
 	}
 	output+="</div>";
